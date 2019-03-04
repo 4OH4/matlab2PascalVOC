@@ -5,3 +5,5 @@ Converter to output Pascal VOC-style image annotations from MATLAB labelled imag
     annotation = Annotation(path, width, height, [depth], [database], [segmented])
     annotation.addObject(name, xmin, ymin, xmax, ymax, [pose], [truncated], [difficult])
     annotation.write(output_filepath)
+
+You can also use the `write_pascal_voc.m` script - be sure to set the configuration parameters at the top of the file to match your setup (folder names, paths, file names etc).
